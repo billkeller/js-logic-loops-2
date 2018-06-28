@@ -3,6 +3,7 @@
 }
 
 body {
-    font: normal 16px Helvetica, Arial, sans-serif;
+    font: normal 21px Helvetica, Arial, sans-serif;
     background-color: lightgray;
+    padding: 100px;
 }
