@@ -107,3 +107,60 @@ console.log(cartoons.indexOf('popeye')); // logs num 2
 if (cartoons.indexOf('popeye') === 2) {
     // you will end up here
 }
+
+var beers = ['Lagunitas', 'miller', 'coors', 'bud', 'drink'];
+var beersHtml = '';
+// for loop. initilization, test, increment
+for (var i = 0; i < beers.length; i++) {
+    // each item
+    console.log(beers[i]);
+    beersHtml = beersHtml + '<li>' + beers[i] + '</li>';
+    console.log(beersHtml);
+}
+document.getElementById('js-beers').innerHTML = beersHtml;
+
+// while loop
+var x = 6;
+while (x < 10) {
+    console.log(x);
+    x++;
+}
+
+var myFriends = ['steve', 'Shirley', 'Marvin', 'Madelyn', 'Horace'];
+for (var i = 0; i < myFriends.length; i++) {
+    console.log('I am friends with ' + myFriends[i]);
+}
+
+// getElementById, returns null or one object
+var heading = document.getElementById('title'); 
+console.log(heading.innerText);
+var name = 'Steve';
+heading.innerText = 'Welcome ' + name; 
+
+// getElementsByClassName and getElementsByTagName return arrays
+var secondHeader = document.getElementsByClassName('heading')[1];
+secondHeader.innerText = 'I selected YOU and updated your text';
+
+// add elements to your DOM.
+// select them using different selectors
+// change them and update your DOM
+
+// returns first p.js-copy as object
+var firstPara = document.querySelector('.js-copy');
+firstPara.innerHTML = '<span style="color: red;">I replaced you</span>'
+// returns all p.js-copy's as an array
+var allPara = document.querySelectorAll('.js-copy');
+allPara[1].innerText = 'Second para, I replaced you too'
+
+
+
+
+
+
+
+
+
+
+
+
+
